@@ -1,0 +1,201 @@
+:root{
+    --font_f_1: ;
+
+    --color_1:#24497c;
+    --color_2:#ca5a45;
+    --color_3:#1d1e23;
+    --color_4:#66696b;
+    --color_5:#bec0c1;
+    --color_6:#ffffff;
+    
+    --family_1: impact;
+    --family_2: Calibri;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.top_line{
+    width:100%; 
+    height:2rem;
+    background: var(--color_1);
+}
+.top_line2{
+    width: 100%;
+    height: 0.5rem;
+    background: var(--color_2);
+    
+}
+
+.flex_header {
+    background: var(--color_6);
+    width: 100%;
+    min-height: 150px;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    max-width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+
+    a{
+        font-size: 1.5rem;
+        font-weight: bolder;
+        font-family: var(--family_2);
+        text-decoration: none;
+        
+    }
+    a:link{
+        color: var(--color_1)
+    }
+    a:visited{
+        color: var(--color_1)
+    }
+    a:hover{
+        color: var(--color_2);}
+}
+
+main{
+    background: var(--color_6);
+}
+
+/* Hela innehållet på sidan */
+main.about {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+/* En avdelning i taget */
+.department {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+/* Rubrik för varje avdelning */
+.department h2.department_title {
+    font-family: var(--family_2);
+    font-size: 2rem;
+    color: var(--color_1);
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--color_2);
+}
+
+/* Rutorna med personerna */
+.department_people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+/* Varje personruta */
+.about_card {
+    width: 260px;
+    max-width: 100%;
+    display: flex;
+}
+
+/* Själva kortet */
+.about_design {
+    width: 100%;
+    background: var(--color_1);
+    color: var(--color_6);
+    border-radius: 20px;
+    padding: 1.25rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+/* Arbetsroll */
+.about_design h1 {
+    font-family: var(--family_2);
+    font-size: 1.15rem;
+    line-height: 1.4;
+    min-height: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Bild på personen */
+.about_design img {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Personens namn */
+.about_design h2 {
+    font-family: var(--family_2);
+    font-size: 1.25rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+
+
+
+
+
+
+
+
+
+
+.center{
+    display:grid;
+    place-content: center;
+    
+}
+
+.center_2{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
