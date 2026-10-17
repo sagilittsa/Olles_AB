@@ -18,8 +18,8 @@
 
             <div class="navigation">
                 <nav>
-                    <a href="index.html">Hem</a>
-                    <a href="index_2.html">Produktion</a>
+                    <a href="index.html">Produktion</a>
+                    <a href="index_2.html">Policy</a>
                     <a href="index_3.html">Om oss</a>
                     <a href="index_4.html">Kontakt</a>
                 </nav>
@@ -31,8 +31,34 @@
     </header>
 
 
-    <main></main>
+    <main class="contact">
+        <section class="message">
+            <h3>Låter det intressant? Kontakta oss gärna!</h3><br>
+             <form actrion="/action_page.php">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Namn">
 
-    <footer></footer>   
+                <label for="company"></label><br>
+                <input type="text" id="company" name="company" placeholder="Företag">
+
+                <label for="mail_adress"></label><br>
+                <input type="email" id="mail_adress" name="mail_adress" placeholder="Mail-adress" required><br>
+
+                <label for="comment"></label><br>
+                <input type="text" id="comment" name="comment" placeholder="Meddelande"><br><br>
+
+                <input type="Submit" value="Skicka">
+             </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h3>Glenn Klapfventrikel, VD</h3>
+            <p>Gruvövägen, 66433 Grums</p>
+            <p>info@ollesab.se</p>
+            <p>0771-11 23 88 00</p>
+        </div>
+    </footer>   
 </body>
 </html>
